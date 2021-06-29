@@ -64,9 +64,72 @@
 					</form>
 				</div>
                  <!--/header__search-input-->
+                 <div class="header__languages">
+					<a href="#">
+						en
+					</a>
+					<span class="separator"></span>
+					<a href="#" class="active">
+						ua
+					</a>
+				</div>
+				<!-- /header__languages -->
+				<div class="header__controls">
+					<a href="#" id="orders">
+						<img src="img/orders.svg" alt="Замовлення">
+						<span class="empty">3</span>
+					</a>
 					<a href="#" id="compare">
+						<img src="img/balance.svg" alt="Порівняння">
+						<span>3</span>
+					</a>
+					<a href="#" id="favorits">
+						<img src="img/heart.svg" alt="Обрані">
+						<span>3</span>
+					</a>
+					<a href="#" id="cart">
+						<img src="img/shopping-cart.svg" alt="Корзина">
+						<span class="empty">3</span>
+					</a>
+				</div>
+				<!-- /header__controls -->
 			</div>
 		</header>
+		<main>
+			<div class="container d-flex">
+				<div class="home__catalog">
+
+				</div>
+				<div class="home__banner">
+				</div>
+			</div>
+		</main>
 	</div>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+	<script >
+		$(document).on('ready', function(){
+alert('jquery is ok');
+
+		})
+		//var FirstName="rr";
+		//var lastName="tt";
+		//var fullName=
+		//console.log(fullName)
+		var myData ={
+			FirstName:"rr",
+			lastName:"tt",
+			age:31
+		}
+		function fullNamefunction(first, last) {
+		var fullName = first+' '+ last	;
+		return fullName;
+	
+		}
+		var myFullName = fullNamefunction( myData.FirstName, myData.lastName);
+		//alert(myFullName);
+	</script>
 </body>
 </html>

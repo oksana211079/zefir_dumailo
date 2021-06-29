@@ -154,3 +154,92 @@ position: relative;
 	padding: 0;
 	padding-left: 48px;
 }
+.header__languages {
+	display: flex;
+	align-items: center;
+	margin: 0px 8px;
+}
+
+.header__languages a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 300;
+}
+.header__languages a.active {
+	color: #797878;
+	cursor: text;
+}
+.header__languages a:hover {
+	color: #f00;
+}
+.header__languages a.active:hover {
+	color: #fff;
+}
+.header__languages .separator {
+	display: block;
+	width: 1px;
+	height: 28px;
+	background-color: #797878;
+	margin: 0 8px;
+}
+.header__controls {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+.header__controls a{
+	display: flex;
+	position: relative;
+	text-decoration: none;
+	height: 40px;
+	width: 40px;
+	border-radius: 4px;
+	align-items: center;
+	justify-content: center;
+	margin: 0px 8px;
+}
+.header__controls a:hover{
+	background: #4c4c4c;
+}
+.header__controls a img{
+	height: 24px;
+	width: 24px;
+
+}
+.header__controls a span{
+	min-width: 20px;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	background: #797878;
+	border-radius: 50%;
+	/*вертикально по центру*/
+	align-items: center;
+	/*горизонтально по центру*/
+	justify-content: center;
+	color: #fff;
+	position: absolute;
+	top: -4px;
+	right: -4px;
+}
+.header__controls a span.empty {
+	display: none;
+}
+
+
+.home__catalog {
+	background: #f00;
+	min-height: 100px;
+	width: 300px;
+	min-width: 300px;
+}
+.home__banner {
+	background: yellow;
+	min-height: 100px;
+	width: calc(100% - 300px);
+	min-width: calc(100% - 300px);
+}
+.d-flex {
+	display: flex;
+}
