@@ -1,6 +1,6 @@
 body{
-padding: 0;
-margin: 0;
+	padding: 0;
+	margin: 0;
 }
 .container {
 	width: 90%;
@@ -16,8 +16,8 @@ margin: 0;
 	position: relative;
 }
 .header>.container {
-display: flex;	
-align-items: center;
+	display: flex;	
+	align-items: center;
 }
 .header__menu-toggle{
 	position: relative;
@@ -26,19 +26,19 @@ align-items: center;
 	height: 40px;
 	margin-right: 18px;
 	border-radius: 4px;
-    transition: 0.3s;
-    cursor: pointer;
+	transition: 0.3s;
+	cursor: pointer;
 }
 .header__menu-toggle:hover {
-background: #4e4c4c;
-transition: 0.3s;
+	background: #4e4c4c;
+	transition: 0.3s;
 }
 .header__menu-toggle:active {
 
-transition: 0.3s;
+	transition: 0.3s;
 }
 .header__menu-toggle > div{
-width: 24px;
+	width: 24px;
 	height: 2px;
 	background: #fff;
 	top: 50%;
@@ -47,10 +47,10 @@ width: 24px;
 	transform: translateX(-50%);
 }
 .header__menu-toggle > div:nth-child(1) {
-top: 12px;
+	top: 12px;
 }
 .header__menu-toggle > div:nth-child(3) {
-top: calc(100% - 12px);
+	top: calc(100% - 12px);
 }
 .header__menu-toggle.opened > div:nth-child(2){
 	display: none;
@@ -58,8 +58,8 @@ top: calc(100% - 12px);
 }
 .header__menu-toggle.opened  > div:nth-child(1) {
 	transform: translateX(-50%) rotate(45deg) ;
-		top: 50%;
-		transition: 0.3s;
+	top: 50%;
+	transition: 0.3s;
 }
 .header__menu-toggle.opened > div:nth-child(3) {
 	transform: translateX(-50%) rotate(-45deg) ;
@@ -79,7 +79,7 @@ top: calc(100% - 12px);
 	padding: 0 14px;
 	font-size: 16px; 
 	transition: 0.3s;
-    cursor: pointer;
+	cursor: pointer;
 }
 .header__catalog-toggle button:hover {
 	background: #7a7979;
@@ -109,13 +109,13 @@ top: calc(100% - 12px);
 	border-bottom-right-radius: 4px;
 }
 .header__search .header__search-mic {
-background: none;
-border: none;
-border-radius: 0px;
-width: 40px;
-cursor: pointer;
-height: 40px;
-position: relative;
+	background: none;
+	border: none;
+	border-radius: 0px;
+	width: 40px;
+	cursor: pointer;
+	height: 40px;
+	position: relative;
 }
 .header__search .header__search-mic::before {
 	content:""; 
@@ -236,8 +236,7 @@ position: relative;
 	width: 300px;
 	min-width: 300px;
 }
-.home__banner {
-	background: yellow;
+.home__content{
 	min-height: 100px;
 	width: calc(100% - 300px);
 	min-width: calc(100% - 300px);
@@ -264,6 +263,44 @@ position: relative;
 }
 
 .slick-slide img {
-    display: block;
-    max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
+.home__banner-slider .slick-slide {
+	height: 340px;
+}
+.home__banner-slider .prev-button,
+.home__banner-slider .next-button {
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+	transform: translateY(-50%);
+	right: 0;
+	height: 100%;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.home__banner-slider .prev-button svg,
+.home__banner-slider .next-button svg{
+	fill: #467faa;
+}
+.home__banner-slider .prev-button:hover svg,
+.home__banner-slider .next-button:hover svg{
+	fill: #ff7878;
+	transition: 0.3s;
+}
+.home__banner-slider .prev-button{
+	right: initial;
+	left: 0;
+
+	transform:translateY(-50%) scaleX(-1);
+}
+@import "_product-card.css" screen;
