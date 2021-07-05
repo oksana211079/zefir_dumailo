@@ -232,11 +232,44 @@ position: relative;
 
 
 .home__catalog {
-	background: #f00;
+	
 	min-height: 100px;
 	width: 300px;
 	min-width: 300px;
 }
+.home__catalog-menu{
+	position: relative;
+	display: block;
+
+	height: 30px;
+	box-sizing: border-box;
+	width: 100%;
+	line-height: 31px;
+	padding-left: 12px;
+	padding-right: 12px; 
+
+	
+}
+.home__catalog-menu a {
+	display: flex;
+	align-items: center;
+	color: #3e77aa;
+	text-decoration: none;
+cursor: pointer;
+font-size: 16px;
+
+
+}
+.home__catalog-menu:hover a{
+	text-decoration: underline;
+	color: #f00;
+}
+.home__catalog-menu a img{
+	height: 24px;
+	width: 24px;
+margin-right: 10px;
+}
+
 .home__banner {
 	background: yellow;
 	min-height: 100px;
