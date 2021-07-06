@@ -37,11 +37,21 @@
 	background: #e7e7e7;
 	transition: 0.3s;
 }
-.product-card .thumb .add-to-favorites svg{
+.product-card .thumb .add-to-favorites svg {
 	fill: #ffa900;
 	height: 24px;
 	width: 24px;
 }
+.product-card .thumb .add-to-favorites svg.filled{
+	display: none;
+}
+.product-card .thumb .add-to-favorites.in-favorites svg {
+	display: none;
+}
+.product-card .thumb .add-to-favorites.in-favorites svg.filled{
+	display: inline-block;
+}
+
 .product-card .title{
 	font-size: 14px;
 	color: #333;
